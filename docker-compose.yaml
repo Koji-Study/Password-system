@@ -1,0 +1,12 @@
+version: '3'
+services:
+  django:
+    image: django:hao
+    container_name: django
+    ports:
+     - 8888:8000
+    command: "python /Django/djangoproj/manage.py runserver 0.0.0.0:8000"
+    volumes:
+      - ./Django:/Django
+
+      
